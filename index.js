@@ -29,7 +29,10 @@ server.post('/get-movie-details', (req, res) => {
             return res.json({
                 fulfillmentMessages: [
                 {
-                    text: dataToSend,
+                    text: 
+                    { 
+                        text: [dataToSend]
+                    },
                     displayText: dataToSend,
                     source: 'get-movie-details'
                 }
