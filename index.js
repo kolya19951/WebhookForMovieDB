@@ -27,11 +27,11 @@ server.post('/get-movie-details', (req, res) => {
             dataToSend += `${movie.Title} is a ${movie.Actors} starer ${movie.Genre} movie, released in ${movie.Year}. It was directed by ${movie.Director}`;
 
             return res.json({
-                fulfillmentMessages: {
+                fulfillmentMessages: [
                 text: dataToSend,
                 displayText: dataToSend,
                 source: 'get-movie-details'
-                }
+                ]
             });
         });
     }, (error) => {
