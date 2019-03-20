@@ -32,9 +32,7 @@ server.post('/get-movie-details', (req, res) => {
                     text: 
                     { 
                         text: [dataToSend]
-                    },
-                    displayText: dataToSend,
-                    source: 'get-movie-details'
+                    }
                 }
                 ]
             });
